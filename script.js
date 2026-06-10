@@ -71,8 +71,8 @@ let taskDescribe=taskDescription.value.trim();
 //Function to display the task list
 function showTasks() {
      
-        todoList.innerHTML="";
-        completedList.innerHTML="";
+       todoList.innerHTML="";
+       completedList.innerHTML="";
         
       // Initialising counnter variables
         let todoCount=0;
