@@ -49,8 +49,3 @@ Resolution: Read documentation and examples to understand the methodolody of imp
 
 Status: All challenges have been resolved.
 
-# Improvements that can be added
--Search and Filter Functionality
--Backend Database Connectivity 
--Assign Priority to Tasks
--Assign Time-Stamp to Tasks
