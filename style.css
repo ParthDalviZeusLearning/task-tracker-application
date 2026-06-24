@@ -9,13 +9,14 @@ body{
 
 /* Container Styling */
 .container{
-    width: 1000px;
-    height:auto;
-    background:#D9E9CF;
-    padding:25px;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    background: #D9E9CF;
+    padding: 25px;
     border-radius: 10px;
     border: 3px solid black;
-
+    box-sizing: border-box;
 }
 
 h1,h4{
@@ -153,7 +154,7 @@ li{
 
 .task-title{
  display:block;
- font-size: 22 px;
+ font-size: 22px;
  font-weight:700;
  color:#1E3A5F;
  margin-bottom:8px;
@@ -197,3 +198,126 @@ li{
  color:#5B7A99 ;
 }
 
+.dragging{
+
+    opacity: 0.5px;
+}
+
+#incomplete-tasks li{
+  
+    cursor: grab;
+}
+
+/* Tablet Devices */
+@media screen and (max-width: 768px) {
+
+    body {
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    input,
+    select {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .task-title {
+        font-size: 18px;
+    }
+
+    .button-container {
+        min-width: auto;
+        gap: 8px;
+    }
+}
+
+
+/* Mobile Devices */
+@media screen and (max-width: 480px) {
+
+    body {
+        margin-top: 10px;
+        padding: 5px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 12px;
+        border-width: 2px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    h4 {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input,
+    select,
+    button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .task-info {
+        width: 100%;
+    }
+
+    .button-container {
+        width: 100%;
+        min-width: auto;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .button-container button {
+        flex: 1;
+        min-width: 80px;
+        padding: 10px;
+    }
+
+    .task-title {
+        font-size: 18px;
+    }
+
+    .task-description,
+    .task-priority,
+    .task-date {
+        font-size: 13px;
+    }
+
+    .task-timestamp {
+        font-size: 11px;
+    }
+}

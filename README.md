@@ -49,7 +49,4 @@ Resolution: Read documentation and examples to understand the methodolody of imp
 
 Status: All challenges have been resolved.
 
-<<<<<<< HEAD
-=======
 
->>>>>>> caa417f (Mentor Feedback corporated)
